@@ -11,14 +11,14 @@ export function Header() {
                 <nav className={styles.nav}>
                     <Link href="/">
                         <h1 className={styles.logo}>
-                            Tarefas<span>+</span>
+                            Tasks<span>+</span>
                         </h1>
                     </Link>
 
                     {session?.user && (
                         <>
                             <Link href="dashboard" className={styles.link}>
-                                Meu painel
+                                My Dashboard
                             </Link>
                         </>
                     )}
@@ -28,13 +28,14 @@ export function Header() {
                     <></>
                     ) : session ? (
                         <button className={styles.loginButton} onClick={() => signOut()}>
-                            Olá, {session.user?.name}
+                            Hi, {session.user?.name}
                         </button>
                     ) : (
                         <button className={styles.loginButton} onClick={() => signIn("google")}>
-                            Acessar
+                            Log in
                         </button>
-                )}
+                    )
+                }
             </section>
         </header>
     )

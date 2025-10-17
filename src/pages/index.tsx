@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Tarefas+ | Organize suas tarefas de forma fácil</title>
+        <title>Task+ | Organize your tasks easily</title>
       </Head>
 
       <main className={styles.main}>
@@ -22,8 +22,8 @@ export default function Home() {
         </div>
 
         <h1 className={styles.title}>  
-          Sistema feito para você organizar <br />
-          seus setudos e tarefas
+          System made for you to organize <br />
+          your studies and tasks
         </h1>
 
         <div className={styles.infoContent}>
@@ -32,7 +32,7 @@ export default function Home() {
           </section>
           
           <section className={styles.box}>
-            <span>+90 comentários</span>
+            <span>+90 comments</span>
           </section>
         </div>
       </main>
